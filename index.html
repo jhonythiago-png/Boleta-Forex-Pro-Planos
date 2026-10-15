@@ -88,9 +88,9 @@ h2{margin:0 0 12px;font-weight:800;font-size:36px;letter-spacing:-.01em}
 noscript p{color:var(--muted)}
 
 /* janela do Pix */
-dialog{border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);padding:0;width:min(520px,calc(100% - 24px));max-height:calc(100% - 24px)}
+dialog{border:1px solid var(--border);border-radius:16px;background:var(--surface);color:var(--text);padding:0;width:min(520px,calc(100% - 24px));max-height:calc(100vh - 24px);max-height:calc(100dvh - 24px);overflow:hidden}
 dialog::backdrop{background:rgba(8,8,18,.78)}
-.dlg{padding:24px;overflow:auto;max-height:calc(100vh - 24px)}
+.dlg{padding:24px;overflow-y:auto;max-height:calc(100vh - 26px);max-height:calc(100dvh - 26px);scrollbar-width:thin;scrollbar-color:#4A4A66 transparent}
 .dlg-topo{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
 .dlg h2{font-size:24px;margin:0}
 .dlg-x{flex:0 0 auto;width:44px;height:44px;margin:-8px -8px 0 0;display:inline-flex;align-items:center;justify-content:center;background:transparent;border:0;color:var(--muted);cursor:pointer;border-radius:8px}
